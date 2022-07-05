@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cultrade</title>
+    <link rel="stylesheet" href="styles/accountstyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!--Header-->
+    <div class="header">
+        <div class="container">
+            <div class = "navbar">
+
+                <div class="logo">
+                    <img src ="images/logo.png" width="200px" height="105px">
+                </div>
+
+                <nav>
+                    <ul class = "uol">
+                        <li><a href="home.html" id = "men">Home</a></li>
+                        <li><a href="products.html" id = "men">Products </a></li>  
+                        <li><a href="newarrivals.html" id = "men">New Arrivals</a></li>
+                        <li><a href="contactus.php" id = "men">Contact Us</a></li>
+                        <li><a href="aboutus.html" id = "men">About Us</a></li>
+                    </ul>  
+                </nav>  
+
+                <div class="crt">
+                    <a href="cart.html"><img src="images/cart.png" id="crt" width="25px" height="25px"></a>
+                </div> 
+
+                <div class="use">
+                    <div class="action">
+                        <div class="profile" onclick="menu()";>
+                            <a href="#"></a><img src="images/user.png" id = "use" width="25px" height="25px"></a>
+                        </div>
+                        <div class="menu">
+                            <h3><a href="account.html">Richard Stark</a><br><span>User</span></h3>
+                            <ul>
+                                <li><img src = "images/profile.png"><a href="login.php">Log In</a></li>
+                                <li><img src = "images/add.png"><a href="register.html">Register</a></li>
+                                <li><img src = "images/question.png"><a href="#">Help</a></li>
+                                <li><img src = "images/settings.png"><a href="#">Setting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                </div>
+                <script>
+                    function menu()
+                    {
+                        const toggle = document.querySelector('.menu');
+                        toggle.classList.toggle('active');
+                    }
+                </script>
+            </div>  
+        </div>
+    </div>
+   <br />
+ 
+            <div class="topbar">
+			    <a href="">Logout</a>
+				<a href="">Help</a>
+			</div>
+			<br>
+   
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-50">
+            <h3>Info</h3>
+            <label for="fname"><i class="fa fa-user"></i> First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Richard">
+			<label for="lname"><i class="fa fa-user"></i> Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Stark">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="12/8 Sunflower Rd, Colombo 10">
+			<label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="richard.stark@gmail.com">
+            <label for="city"><i class="fa fa-institution"></i> Phone number</label>
+            <input type="text" id="city" name="city" placeholder="076-593-4187">
+          </div>
+        </div>
+      </form>
+	  <hr>
+	  <form action="/action_page.php">
+        <div class="row">
+          <div class="col-50">
+		    <div class="ult">
+			    <div class="bar">
+				   <h3>My Orders</h3>
+                      <ul>
+                         <li><img src = "images/a-1.png"><a href="#"> To Pay </a></li>
+                         <li><img src = "images/a-3.png"><a href="#"> To ship </a></li>
+                         <li><img src = "images/a-6.png"><a href="#"> To Recieve </a></li>
+                         <li><img src = "images/a-2.png"><a href="#"> To Review </a></li>
+	                     <li><img src = "images/a-4.png"><a href="#"> My Returns </a></li>
+                         <li><img src = "images/a-5.png"><a href="#"> My Cancellations </a></li>
+                      </ul>
+				</div>
+			</div>
+          </div>
+        </div>
+      </form>
+	  <hr>
+    </div>
+  </div>
+</div>
+<hr>  
+   
+    <br />
+
+    <!--Footer-->
+
+    <footer class= "footer">
+        <div class= "container">
+            <div class ="row">
+                <div class= "footer-col">
+                    <h4>Company</h4>
+
+                    <ul>
+                        <li><a href="aboutus.html">about us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="checkoutform.php">delivery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>get help</h4>
+
+                    <ul>
+                        <li><a href="faq.php">FAQ</a></li>
+                        <li><a href="contactus.php">Contact us</a></li>
+                        <li><a href="return.php">returns</a></li>
+                        <li><a href="feedback.php">Feedback</a></li>
+                        <li><a href="payment.html">payment options</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>online shop</h4>
+
+                    <ul>
+                        <li><a href="products.html">Women wear</a></li>
+                        <li><a href="products.html">Gents wear</a></li>
+                        <li><a href="products.html">Kids wear</a></li>
+                        <li><a href="products.html">Fabrics</a></li>
+                        <li><a href="products.html">Bags</a></li>
+                        <li><a href="newarrivals.html">New arrivals</a></li>
+                    </ul>
+                </div>
+
+                <div class= "footer-col">
+                    <img src="images/cultrate.png" width="300px" height="150px">
+
+                    <form action="">
+                        <input type="email" placeholder="Enter Email here" id="">
+                        <input type="submit" value="Subscribe Now">
+                    </form>
+
+                    <br/>
+
+                    <div class="social-links">
+                        <a href="#"><img src="images/fb.png" id = "sm" width = "50px" height="50px"></a>
+                        <a href="#"><img src="images/twit.png" id = "sm"  width = "50px" height="50px"></a>
+                        <a href="#"><img src="images/insta.png" id = "sm"  width = "50px" height="50px"></a>
+                        <a href="#"><img src="images/link.png" id = "sm"  width = "50px" height="50px"></a>
+                    </div>
+                </div>
+
+                <div class="notice">
+                    Copyright Protected &copy;
+                    <b>2021 Cultrade.lk (Pvt.).Ltd</b>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
